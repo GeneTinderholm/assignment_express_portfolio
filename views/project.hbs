@@ -1,0 +1,22 @@
+<h1>{{project.name}}</h1>
+
+
+	<div class="project-tech">
+		<h2>Tech used:</h2>
+		{{#each project.techUsed as |techUsed|}}
+			<div class="tech-used">
+				<br>
+				{{techUsed}}
+			</div>
+		{{/each}}
+	</div>
+	<div class="desc">
+		<h2>Project Description:</h2>
+		<br>
+		{{project.desc}}
+	<div class="ghRepo">
+		<h2>GitHub Repo:</h2>
+		<a href="{{project.ghRepo}}">{{project.ghRepo}}</a>
+	</div>
+<h2>Image of Project</h2>
+<img src="/images/{{project.name}}.png">
